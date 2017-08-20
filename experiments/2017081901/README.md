@@ -1,6 +1,6 @@
 # Purpose
 
-Check if the profit rate, increase rate and turnover rate can be used to classify *buy* signal with XGBoost.
+Check if the profit rate, increase rate and turnover rate are effective when they are used to classify *buy* signal with XGBoost.
 
 # Feature column index
 
