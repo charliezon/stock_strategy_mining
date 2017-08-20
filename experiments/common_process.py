@@ -42,7 +42,7 @@ class BaseProcess(object):
                 data[0:0] = self.process_file(new_path)
         return data
 
-    def process(self):
+    def __call__(self):
         data = self.process_folder(self._raw_data_path)
         if self._need_sort:
             data = self.sort_data(data)

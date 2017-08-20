@@ -23,4 +23,4 @@ if __name__ == "__main__":
         signal_index=102,
         take_profit_rate=0.034
         )
-    process.process()
+    process()

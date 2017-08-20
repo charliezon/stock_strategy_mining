@@ -21,4 +21,4 @@ if __name__ == "__main__":
         [7, 39, 70],
         gen_svm=True
         )
-    process.process()
+    process()
