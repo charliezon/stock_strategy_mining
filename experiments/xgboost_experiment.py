@@ -28,6 +28,6 @@ class XGBoostExperiment:
         # this is prediction
         preds = bst.predict(dtest)
         labels = dtest.get_label()
-        print ('error=%f' % ( sum(1 for i in range(len(preds)) if int(preds[i]>0.5)!=labels[i]) /float(len(preds))))
+        print ('error=%f' % ( sum(1 for i in range(len(preds)) if int(preds[i]>self._pred_threshold)!=labels[i]) /float(len(preds))))
 
-        print ('correct=%f' % ( sum(1 for i in range(len(preds)) if int(preds[i]>0.5)==labels[i]) /float(len(preds))))
+        print ('correct=%f' % ( sum(1 for i in range(len(preds)) if int(preds[i]>self._pred_threshold)==labels[i]) /float(len(preds))))

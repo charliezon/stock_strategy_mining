@@ -6,7 +6,7 @@
     * Increase rate of current day (#39)
     * Turnover rate of current day (#70)
 
-    Only process *buy* signal.  (#101)
+    Only process *follow* signal. (#102)
 
     Sort the extracted data.
 '''
@@ -19,6 +19,8 @@ if __name__ == "__main__":
         'F:/项目/StockMining/data_for_dl/data/data_buy_follow_index_1/raw',
         './data/processed',
         [7, 39, 70],
-        gen_svm=True
+        gen_svm=True,
+        signal_index=102,
+        take_profit_rate=0.034
         )
     process.process()
