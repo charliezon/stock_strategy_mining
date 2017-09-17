@@ -12,10 +12,10 @@
 '''
 import sys
 sys.path.append('../../')
-from experiments.common_process import SimpleProcess
+from experiments.common_process import IneterestProcess
 
 if __name__ == "__main__":
-    process = SimpleProcess(
+    process = IneterestProcess(
         'F:/项目/StockMining/data_for_dl/data/data_buy_follow_index_1/raw',
         './data/processed',
         [7, 39, 70],
